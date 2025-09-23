@@ -13,10 +13,12 @@
   <!-- BaguetteBox CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 
-  <!-- Optional custom gallery CSS -->
-  <link href="./css/thumbnail-gallery.css" rel="stylesheet" />
-
   <style>
+    body {
+      background: transparent; /* Notion-friendly */
+      color: #fff;
+    }
+
     .tz-gallery {
       padding: 40px;
     }
@@ -24,44 +26,48 @@
     .tz-gallery .thumbnail {
       padding: 0;
       margin-bottom: 30px;
-      background-color: #fff;
+      background-color: transparent; /* transparent for Notion */
       border-radius: 4px;
       border: none;
       transition: 0.15s ease-in-out;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+      box-shadow: none; /* remove white shadow */
+      overflow: hidden;
     }
 
     .tz-gallery .thumbnail:hover {
       transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* soft glow hover */
+    }
+
+    .tz-gallery img {
+      width: 100%;
+      height: 250px; /* consistent height */
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
     }
 
     .baguetteBox-button {
       background-color: transparent !important;
     }
 
-    .img-responsive,
-    .thumbnail a>img,
-    .thumbnail>img {
-      display: block;
-      max-width: 100%;
-      height: auto;
+    .baguetteBox-overlay {
+      background-color: rgba(0, 0, 0, 0.95) !important; /* dark overlay */
     }
   </style>
 </head>
 
 <body>
-
   <main>
     <section id="gallery">
       <div class="gallery-container container">
-        <!-- ONE tz-gallery wrapper for all items -->
         <div class="tz-gallery">
           <div class="row">
 
             <div data-aos="flip-up" class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <a class="lightbox" href="ch1.jpg">
-                  <img src="ch1.jpg" class="img-fluid">
+                  <img src="ch1.jpg" alt="ch1">
                 </a>
               </div>
             </div>
@@ -69,7 +75,7 @@
             <div data-aos="flip-up" data-aos-delay="20" class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <a class="lightbox" href="ch2.jpg">
-                  <img src="ch2.jpg" class="img-fluid">
+                  <img src="ch2.jpg" alt="ch2">
                 </a>
               </div>
             </div>
@@ -77,7 +83,7 @@
             <div data-aos="flip-up" data-aos-delay="40" class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <a class="lightbox" href="ch3.jpg">
-                  <img src="ch3.jpg" class="img-fluid">
+                  <img src="ch3.jpg" alt="ch3">
                 </a>
               </div>
             </div>
@@ -85,7 +91,7 @@
             <div data-aos="flip-up" data-aos-delay="80" class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <a class="lightbox" href="ch5.jpg">
-                  <img src="ch5.jpg" class="img-fluid">
+                  <img src="ch5.jpg" alt="ch5">
                 </a>
               </div>
             </div>
@@ -93,7 +99,7 @@
             <div data-aos="flip-up" data-aos-delay="100" class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <a class="lightbox" href="ch6.jpg">
-                  <img src="ch6.jpg" class="img-fluid">
+                  <img src="ch6.jpg" alt="ch6">
                 </a>
               </div>
             </div>
@@ -101,7 +107,7 @@
             <div data-aos="flip-up" data-aos-delay="160" class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <a class="lightbox" href="ch9.jpg">
-                  <img src="ch9.jpg" class="img-fluid">
+                  <img src="ch9.jpg" alt="ch9">
                 </a>
               </div>
             </div>
