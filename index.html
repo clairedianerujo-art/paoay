@@ -2,9 +2,18 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- BaguetteBox CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+  <!-- Optional custom gallery CSS -->
   <link href="./css/thumbnail-gallery.css" rel="stylesheet" />
 
   <style>
@@ -30,9 +39,6 @@
       background-color: transparent !important;
     }
 
-
-    .carousel-inner>.item>a>img,
-    .carousel-inner>.item>img,
     .img-responsive,
     .thumbnail a>img,
     .thumbnail>img {
@@ -41,93 +47,84 @@
       height: auto;
     }
   </style>
-
 </head>
 
 <body>
 
-
   <main>
-
-
     <section id="gallery">
-      <div class=" gallery-container container">
+      <div class="gallery-container container">
+        <!-- ONE tz-gallery wrapper for all items -->
         <div class="tz-gallery">
-
           <div class="row">
 
-            <!---------------------------------------------->
             <div data-aos="flip-up" class="col-sm-6 col-md-4">
-              <div class="tz-gallery">
+              <div class="thumbnail">
                 <a class="lightbox" href="ch1.jpg">
                   <img src="ch1.jpg" class="img-fluid">
                 </a>
               </div>
             </div>
 
-            <!---------------------------------------------->
-
             <div data-aos="flip-up" data-aos-delay="20" class="col-sm-6 col-md-4">
-              <div class="tz-gallery">
+              <div class="thumbnail">
                 <a class="lightbox" href="ch2.jpg">
                   <img src="ch2.jpg" class="img-fluid">
                 </a>
               </div>
             </div>
-            <!---------------------------------------------->
 
             <div data-aos="flip-up" data-aos-delay="40" class="col-sm-6 col-md-4">
-              <div class="tz-gallery">
+              <div class="thumbnail">
                 <a class="lightbox" href="ch3.jpg">
                   <img src="ch3.jpg" class="img-fluid">
                 </a>
-
               </div>
             </div>
-            <!---------------------------------------------->
 
             <div data-aos="flip-up" data-aos-delay="80" class="col-sm-6 col-md-4">
-              <div class="tz-gallery">
+              <div class="thumbnail">
                 <a class="lightbox" href="ch5.jpg">
                   <img src="ch5.jpg" class="img-fluid">
                 </a>
               </div>
             </div>
-            <!---------------------------------------------->
 
             <div data-aos="flip-up" data-aos-delay="100" class="col-sm-6 col-md-4">
-              <div class="tz-gallery">
+              <div class="thumbnail">
                 <a class="lightbox" href="ch6.jpg">
                   <img src="ch6.jpg" class="img-fluid">
                 </a>
               </div>
             </div>
-            <!---------------------------------------------->
 
             <div data-aos="flip-up" data-aos-delay="160" class="col-sm-6 col-md-4">
-              <div class="tz-gallery">
+              <div class="thumbnail">
                 <a class="lightbox" href="ch9.jpg">
                   <img src="ch9.jpg" class="img-fluid">
                 </a>
               </div>
             </div>
 
-
-
-
           </div>
         </div>
       </div>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-      <script>
-        baguetteBox.run('.tz-gallery');
-      </script>
-
     </section>
-
-
   </main>
 
+  <!-- JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.tz-gallery');
+  </script>
+
+  <!-- AOS (for animations) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
 
 </html>
