@@ -1,244 +1,276 @@
 <!DOCTYPE html>
-<html>
-	<div class="wrapper">
-		<header>
-			<h1> Comparative Review </h1>
-			<link rel="stylesheet" href="comparative_table.css" />
-		</header>
-		<div class="button-wrapper">
-			<button data-btn type="button">Sort activities</button>
-			<button class="clear-button" data-clear type="button">Clear timetable</button>
-		</div>
-		<div class="grid">
-			<table>
-				<thead>
-					<th scope="col">Time</th>
-					<th scope="col">Monday</th>
-					<th scope="col">Tuesday</th>
-					<th scope="col">Wednesday</th>
-					<th scope="col">Thursday</th>
-					<th scope="col">Friday</th>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">7:30am</th>
-						<td><span>Breakfast</span></td>
-						<td><span>Breakfast</span></td>
-						<td><span>Breakfast</span></td>
-						<td><span>Breakfast</span></td>
-						<td><span>Breakfast</span></td>
-					</tr>
-					<tr class="bg-yellow">
-						<th scope="row">9:00am</th>
-						<td><span>Exercise</span></td>
-						<td><span>Exercise</span></td>
-						<td><span>Exercise</span></td>
-						<td><span>Exercise</span></td>
-						<td><span>Exercise</span></td>
-					</tr>
-					<tr class="bg-green">
-						<th scope="row">9:30am</th>
-						<td><span>Free play</span></td>
-						<td><span>Free play</span></td>
-						<td><span>Free play</span></td>
-						<td><span>Free play</span></td>
-						<td><span>Free play</span></td>
-					</tr>
-					<tr>
-						<th scope="row">10:00am</th>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-					</tr>
-					<tr>
-						<th scope="row">11:00am</th>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-					</tr>
-					<tr>
-						<th scope="row">12:00</th>
-						<td><span>Lunch</span></td>
-						<td><span>Lunch</span></td>
-						<td><span>Lunch</span></td>
-						<td><span>Lunch</span></td>
-						<td><span>Lunch</span></td>
-					</tr>
-					<tr class="bg-green">
-						<th scope="row">1:00pm</th>
-						<td><span>Free play</span></td>
-						<td><span>Free play</span></td>
-						<td><span>Free play</span></td>
-						<td><span>Free play</span></td>
-						<td><span>Free play</span></td>
-					</tr>
-					<tr>
-						<th scope="row">2:00pm</th>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-					</tr>
-					<tr>
-						<th scope="row">3:00pm</th>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-					</tr>
-					<tr>
-						<th scope="row">4:00pm</th>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-						<td data-cell></td>
-					</tr>
-					<tr class="bg-green">
-						<th scope="row">5:00pm</th>
-						<td><span>Free play/TV</span></td>
-						<td><span>Free play/TV</span></td>
-						<td><span>Free play/TV</span></td>
-						<td><span>Free play/TV</span></td>
-						<td><span>Free play/TV</span></td>
-					</tr>
-					<tr>
-						<th scope="row">6:00pm</th>
-						<td><span>Dinner</span></td>
-						<td><span>Dinner</span></td>
-						<td><span>Dinner</span></td>
-						<td><span>Dinner</span></td>
-						<td><span>Dinner</span></td>
-					</tr>
-				</tbody>
-			</table>
-	
-			<ul class="activities" data-activities>
-				<li>
-					<div class="activity" style="--bg: #adff8a; --r: -2deg">Baking</div>
-				</li>
-				<li>
-					<div class="activity" style="--r: -4deg">Painting</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #ff8af5; --r: 2.5deg">Painting</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #adff8a; --r: 1.25deg">Treasure hunt</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #ff8af5; --r: -2deg">Cutting and sticking</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #adff8a; --r: 2.5deg">Cutting and sticking</div>
-				</li>
-				<li>
-					<div class="activity" style="--r: -4deg">Drawing/writing practice</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #ff8af5; --r: 1.25deg">Drawing/writing practice</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #adff8a; --r: -2deg">Indoor games</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #ff8af5; --r: 2.5deg">Board games/puzzles</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #adff8a; --r: -4deg">Nature walk</div>
-				</li>
-				<li>
-					<div class="activity" style="--r: 1.25deg">Outdoor games</div>
-				</li>
-				<li>
-					<div class="activity" style="--r: -4deg">Building blocks/Lego</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #adff8a; --r: 2.5deg">Play-doh</div>
-				</li>
-				<li>
-					<div class="activity" style="--r: -2deg">Stickers</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #ff8af5; --r: 1.25deg">Making/crafting</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #adff8a; --r: -4deg">Shopping</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #ff8af5; --r: -2deg">Monster truck race course</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #adff8a; --r: -4deg">Running</div>
-				</li>
-				<li>
-					<div class="activity" style="--r: 1.25deg">Running</div>
-				</li>
-				<li>
-					<div class="activity" style="--r: -2deg">Reading</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #ff8af5; --r: -4deg">Family Facetime</div>
-				</li>
-				<li>
-					<div class="activity" style="--r: 2.5deg">Gardening</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #adff8a; --r: 1.25deg">Cars</div>
-				</li>
-				<li>
-					<div class="activity" style="--bg: #ff8af5;   --r: 2.5deg">Chalks</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<script>
-		const listEl = document.querySelector('[data-activities]')
-		const activities = [...document.querySelectorAll('[data-activities] li')]
-		const cells = [...document.querySelectorAll('[data-cell]')]
-		const btn = document.querySelector('[data-btn]')
-		const clear = document.querySelector('[data-clear]')
-		
-		const shuffle = (array) => {
-			let a = [...array]
-			
-			for (let i = a.length - 1; i > 0; i--) {
-				const j = Math.floor(Math.random() * (i + 1));
-				[a[i], a[j]] = [a[j], a[i]];
-			}
-			
-			return a
-		}
-		
-		const clearTimetable = () => {
-			cells.forEach((el, i) => {
-				el.innerHTML = ''
-			})
-			
-			listEl.style.display = 'grid'
-		}
-		
-		const sortActivities = () => {
-			const activitiesList = shuffle(activities)
-			
-			cells.forEach((el, i) => {
-				el.innerHTML = ''
-				
-				if (i < activities.length) {
-					el.innerHTML = `${activitiesList[i].innerHTML}`
-				}
-			})
-			
-			listEl.style.display = 'none'
-		}
-		
-		btn.addEventListener('click', sortActivities)
-		clear.addEventListener('click', clearTimetable)
-	</script>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Comparative Study — Drag & Drop Quiz</title>
+<style>
+  :root{
+    --bg: #ffffff;
+    --accent: #007bff;
+    --success: #22c55e33;
+    --error: #ef444433;
+  }
+  *{box-sizing:border-box}
+  body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); margin:0; padding:24px; color:#111}
+
+  .wrap{max-width:1200px;margin:0 auto;display:flex;gap:20px;align-items:flex-start}
+
+  /* TABLE column */
+  .table-panel{flex:1}
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+  thead th{background:#f7f7f7;padding:12px 14px;text-align:left;border-bottom:2px solid #e5e7eb}
+  tbody th{background:#fbfbfb;padding:12px 14px;border-top:1px solid #e5e7eb;text-align:left;width:18%}
+  td{padding:12px 14px;min-height:84px;border-top:1px solid #eaeaea;vertical-align:top;position:relative}
+  td.dropzone{background:transparent}
+
+  /* hover / result states */
+  td.dropzone.hover{outline:3px dashed var(--accent)}
+  td.dropzone.correct{outline:4px solid rgba(34,197,94,0.18);background:#ecfdf5}
+  td.dropzone.incorrect{outline:4px solid rgba(239,68,68,0.12);background:#fff1f2}
+
+  /* Post-it column */
+  .postits-panel{width:340px}
+  .postits-panel h3{margin:0 0 10px 0;font-size:1.05rem}
+  .postit-row{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px;min-height:84px}
+
+  .postit{
+    width:160px;min-height:64px;padding:10px;border-radius:8px;box-shadow:0 6px 14px rgba(0,0,0,0.08);cursor:grab;user-select:none;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;transition:transform 150ms ease, box-shadow 150ms ease
+  }
+  .postit:active{cursor:grabbing}
+  .postit.locked{opacity:0.9;cursor:default;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+
+  /* colors per row */
+  .c-1{background:#fff7ae}
+  .c-2{background:#cfeaff}
+  .c-3{background:#dff7df}
+  .c-4{background:#ffe8c8}
+  .c-5{background:#efe0ff}
+  .c-6{background:#ffdfe8}
+  .c-7{background:#dff7f0}
+  .c-8{background:#ffeacc}
+  .c-9{background:#f0f0f0}
+  .c-10{background:#e8fdf3}
+
+  /* tilted look: keep slight rotation preserved when moved */
+  .postit[data-rot]{transform: rotate(var(--rot, 0deg))}
+
+  /* small helper */
+  .note{font-size:0.92rem;color:#374151;margin-bottom:8px}
+
+  @media (max-width:980px){.wrap{flex-direction:column}.postits-panel{width:100%}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="table-panel">
+      <h2 style="margin:0 0 8px">Comparative Study Quiz</h2>
+      <div class="note">Drag the colored post-its on the right into the correct Paoay / La Recoleta cells. Immediate feedback will show if the placement is correct (green) or incorrect (red).</div>
+
+      <table aria-label="Comparative study quiz">
+        <thead>
+          <tr>
+            <th>Aspect</th>
+            <th>Paoay Church</th>
+            <th>La Recoleta Church</th>
+            <th>Heritage Insight / Analysis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1. Historical Context</th>
+            <td class="dropzone" data-accept="Built 1694–1710 by Augustinian friars during Spanish evangelization."></td>
+            <td class="dropzone" data-accept="Founded in 1648 by Franciscan friars in colonial Arequipa."></td>
+            <td>Shows how colonial influences shaped both churches differently, yet both represent resilience of Filipino heritage.</td>
+          </tr>
+
+          <tr>
+            <th scope="row">2. Cultural Role</th>
+            <td class="dropzone" data-accept="Center of Ilocano Catholic life; host of the Guling-Guling Festival."></td>
+            <td class="dropzone" data-accept="Integral to Franciscan monastic life; house museum of colonial and Amazonian heritage."></td>
+            <td>Emphasizes the local community’s identity and religious devotion as cultural anchors.</td>
+          </tr>
+
+          <tr>
+            <th scope="row">3. Architectural Typology</th>
+            <td class="dropzone" data-accept="Earthquake Baroque—massive buttresses, coral-stone walls, low heavy façade."></td>
+            <td class="dropzone" data-accept="Andean Baroque—ornate façade, thick sillar-stone walls, convent cloisters."></td>
+            <td>Both reinterpreted Baroque ideals for seismic safety. Paoay emphasizes solidity and restraint; La Recoleta emphasizes ornamented symbolism.</td>
+          </tr>
+
+          <tr>
+            <th scope="row">4. Materials & Construction Techniques</th>
+            <td class="dropzone" data-accept="Coral stone, bricks, lime mortar mixed with tree sap; wide base for seismic resistance."></td>
+            <td class="dropzone" data-accept="Volcanic sillar stone, locally quarried; carved masonry resistant to earthquakes."></td>
+            <td>Distinct materials but same principle: use of local resources to ensure resilience within the “Ring of Fire.”</td>
+          </tr>
+
+          <tr>
+            <th scope="row">5. Environmental Adaptation</th>
+            <td class="dropzone" data-accept="Tropical climate; frequent earthquakes and typhoons."></td>
+            <td class="dropzone" data-accept="High-altitude arid climate; frequent earthquakes from Andean faults."></td>
+            <td>Both showcase architecture as an environmental response—faith literally grounded in the earth’s conditions.</td>
+          </tr>
+
+          <tr>
+            <th scope="row">6. Aesthetic Expression</th>
+            <td class="dropzone" data-accept="Simplified Baroque with local motifs; triangular pediment, buttresses."></td>
+            <td class="dropzone" data-accept="Complex Andean Baroque; façade with vegetal, angelic, and indigenous patterns."></td>
+            <td>Aesthetic contrast reveals cultural synthesis: Ilocano practicality vs Andean exuberance.</td>
+          </tr>
+
+          <tr>
+            <th scope="row">7. Symbolism & Iconography</th>
+            <td class="dropzone" data-accept="Fusion of Christian and vernacular elements reflects humility and endurance."></td>
+            <td class="dropzone" data-accept="Rich iconography mixing Catholic and pre-Columbian symbols; cultural fusion."></td>
+            <td>The architecture itself becomes theology—Paoay speaks of endurance, La Recoleta of transcendence.</td>
+          </tr>
+
+          <tr>
+            <th scope="row">8. Spatial Layout</th>
+            <td class="dropzone" data-accept="Isolated church with detached bell tower and open forecourt."></td>
+            <td class="dropzone" data-accept="Integrated convent complex with cloisters, library, and museum."></td>
+            <td>Demonstrates functional evolution: parish church for community vs monastic compound for reflection and study.</td>
+          </tr>
+
+          <tr>
+            <th scope="row">9. Conservation Status</th>
+            <td class="dropzone" data-accept="UNESCO World Heritage (1993); continuous restoration by NHCP."></td>
+            <td class="dropzone" data-accept="Part of Arequipa's UNESCO Historic Center; museum managed by Franciscans."></td>
+            <td>Both benefit from UNESCO frameworks—shared challenges: balancing tourism, authenticity, and seismic safety.</td>
+          </tr>
+
+          <tr>
+            <th scope="row">10. Community Engagement</th>
+            <td class="dropzone" data-accept="Active parish; central to tourism and local festivals."></td>
+            <td class="dropzone" data-accept="Active museum and religious site; education and cultural outreach programs."></td>
+            <td>Both sustain living heritage by keeping spirituality and community participation alive.</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <aside class="postits-panel">
+      <h3>Draggable descriptions (per row)</h3>
+
+      <!-- For alignment we create a postit-row per table row. Each contains two post-its. -->
+
+      <div class="postit-row" data-row="1">
+        <div class="postit c-1" draggable="true" data-target="Built 1694–1710 by Augustinian friars during Spanish evangelization." style="--rot:-3deg">Built 1694–1710 by Augustinian friars during Spanish evangelization.</div>
+        <div class="postit c-1" draggable="true" data-target="Founded in 1648 by Franciscan friars in colonial Arequipa." style="--rot:2.5deg">Founded in 1648 by Franciscan friars in colonial Arequipa.</div>
+      </div>
+
+      <div class="postit-row" data-row="2">
+        <div class="postit c-2" draggable="true" data-target="Center of Ilocano Catholic life; host of the Guling-Guling Festival." style="--rot:1.8deg">Center of Ilocano Catholic life; host of the Guling-Guling Festival.</div>
+        <div class="postit c-2" draggable="true" data-target="Integral to Franciscan monastic life; house museum of colonial and Amazonian heritage." style="--rot:-2deg">Integral to Franciscan monastic life; house museum of colonial and Amazonian heritage.</div>
+      </div>
+
+      <div class="postit-row" data-row="3">
+        <div class="postit c-3" draggable="true" data-target="Earthquake Baroque—massive buttresses, coral-stone walls, low heavy façade." style="--rot:-1.5deg">Earthquake Baroque—massive buttresses, coral-stone walls, low heavy façade.</div>
+        <div class="postit c-3" draggable="true" data-target="Andean Baroque—ornate façade, thick sillar-stone walls, convent cloisters." style="--rot:2deg">Andean Baroque—ornate façade, thick sillar-stone walls, convent cloisters.</div>
+      </div>
+
+      <div class="postit-row" data-row="4">
+        <div class="postit c-4" draggable="true" data-target="Coral stone, bricks, lime mortar mixed with tree sap; wide base for seismic resistance." style="--rot:2deg">Coral stone, bricks, lime mortar mixed with tree sap; wide base for seismic resistance.</div>
+        <div class="postit c-4" draggable="true" data-target="Volcanic sillar stone, locally quarried; carved masonry resistant to earthquakes." style="--rot:-2.5deg">Volcanic sillar stone, locally quarried; carved masonry resistant to earthquakes.</div>
+      </div>
+
+      <div class="postit-row" data-row="5">
+        <div class="postit c-5" draggable="true" data-target="Tropical climate; frequent earthquakes and typhoons." style="--rot:-2deg">Tropical climate; frequent earthquakes and typhoons.</div>
+        <div class="postit c-5" draggable="true" data-target="High-altitude arid climate; frequent earthquakes from Andean faults." style="--rot:1.2deg">High-altitude arid climate; frequent earthquakes from Andean faults.</div>
+      </div>
+
+      <div class="postit-row" data-row="6">
+        <div class="postit c-6" draggable="true" data-target="Simplified Baroque with local motifs; triangular pediment, buttresses." style="--rot:1.5deg">Simplified Baroque with local motifs; triangular pediment, buttresses.</div>
+        <div class="postit c-6" draggable="true" data-target="Complex Andean Baroque; façade with vegetal, angelic, and indigenous patterns." style="--rot:-1deg">Complex Andean Baroque; façade with vegetal, angelic, and indigenous patterns.</div>
+      </div>
+
+      <div class="postit-row" data-row="7">
+        <div class="postit c-7" draggable="true" data-target="Fusion of Christian and vernacular elements reflects humility and endurance." style="--rot:2deg">Fusion of Christian and vernacular elements reflects humility and endurance.</div>
+        <div class="postit c-7" draggable="true" data-target="Rich iconography mixing Catholic and pre-Columbian symbols; cultural fusion." style="--rot:-2deg">Rich iconography mixing Catholic and pre-Columbian symbols; cultural fusion.</div>
+      </div>
+
+      <div class="postit-row" data-row="8">
+        <div class="postit c-8" draggable="true" data-target="Isolated church with detached bell tower and open forecourt." style="--rot:-1.75deg">Isolated church with detached bell tower and open forecourt.</div>
+        <div class="postit c-8" draggable="true" data-target="Integrated convent complex with cloisters, library, and museum." style="--rot:1.6deg">Integrated convent complex with cloisters, library, and museum.</div>
+      </div>
+
+      <div class="postit-row" data-row="9">
+        <div class="postit c-9" draggable="true" data-target="UNESCO World Heritage (1993); continuous restoration by NHCP." style="--rot:2deg">UNESCO World Heritage (1993); continuous restoration by NHCP.</div>
+        <div class="postit c-9" draggable="true" data-target="Part of Arequipa's UNESCO Historic Center; museum managed by Franciscans." style="--rot:-1.25deg">Part of Arequipa's UNESCO Historic Center; museum managed by Franciscans.</div>
+      </div>
+
+      <div class="postit-row" data-row="10">
+        <div class="postit c-10" draggable="true" data-target="Active parish; central to tourism and local festivals." style="--rot:-2deg">Active parish; central to tourism and local festivals.</div>
+        <div class="postit c-10" draggable="true" data-target="Active museum and religious site; education and cultural outreach programs." style="--rot:1.25deg">Active museum and religious site; education and cultural outreach programs.</div>
+      </div>
+
+    </aside>
+  </div>
+
+<script>
+// drag & drop logic
+const postits = Array.from(document.querySelectorAll('.postit'));
+const dropzones = Array.from(document.querySelectorAll('td.dropzone'));
+
+// store original parent so wrong answers return
+postits.forEach(p => { p.dataset.origin = p.parentElement.getAttribute('data-row'); });
+
+// set rotation style variable
+postits.forEach(p => {
+  const rot = p.style.getPropertyValue('--rot') || p.getAttribute('style').match(/--rot:([^;]+)deg/)?.[1] || '0';
+  p.style.setProperty('--rot', (rot.includes('deg')?rot:rot + 'deg'));
+});
+
+postits.forEach(p => {
+  p.addEventListener('dragstart', e => {
+    if (p.classList.contains('locked')) { e.preventDefault(); return }
+    e.dataTransfer.setData('text/plain', p.dataset.target);
+    e.dataTransfer.setData('text/id', Array.from(postits).indexOf(p));
+    setTimeout(() => p.style.opacity = '0.45', 0);
+  });
+  p.addEventListener('dragend', () => p.style.opacity = '1');
+});
+
+dropzones.forEach(zone => {
+  zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('hover'); });
+  zone.addEventListener('dragleave', () => zone.classList.remove('hover'));
+  zone.addEventListener('drop', e => {
+    e.preventDefault();
+    zone.classList.remove('hover');
+
+    const payload = e.dataTransfer.getData('text/plain');
+    const idx = e.dataTransfer.getData('text/id');
+    const dragged = postits[idx];
+    if (!dragged) return;
+
+    // check accept match
+    const accept = zone.dataset.accept?.trim();
+    if (accept && accept === payload.trim()) {
+      // correct: snap in and lock
+      zone.textContent = '';
+      zone.appendChild(dragged);
+      dragged.classList.add('locked');
+      dragged.setAttribute('draggable', 'false');
+      zone.classList.remove('incorrect');
+      zone.classList.add('correct');
+
+      // keep rotation
+      dragged.style.transform = getComputedStyle(dragged).getPropertyValue('transform');
+
+    } else {
+      // incorrect: flash red then return
+      zone.classList.add('incorrect');
+      setTimeout(() => zone.classList.remove('incorrect'), 800);
+
+      // return dragged to original container (postit-row)
+      const originRow = document.querySelector('.postit-row[data-row="' + dragged.dataset.origin + '"]');
+      if (originRow) originRow.appendChild(dragged);
+    }
+  });
+});
+</script>
+</body>
 </html>
