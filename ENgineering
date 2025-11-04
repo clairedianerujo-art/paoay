@@ -1,0 +1,30 @@
+<div style="
+  background: #f5f7fa;
+  border-left: 6px solid #0077cc;
+  padding: 1.2em 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin: 2em 0;
+  text-align: center;
+">
+  <h3 style="margin-top:0;">🏛️ Interested in the Engineering Behind Paoay Church?</h3>
+  <p style="font-size: 1.05em; color:#333; margin-bottom:1em;">
+    Learn how this centuries-old structure still stands strong today — 
+    from its coral stone walls to its earthquake-resistant design.
+  </p>
+  <a href="engineering.html" 
+     style="
+       display:inline-block;
+       background:#0077cc;
+       color:#fff;
+       padding:0.6em 1.2em;
+       border-radius:8px;
+       text-decoration:none;
+       font-weight:600;
+       transition: background 0.3s ease;
+     "
+     onmouseover="this.style.background='#005fa3'"
+     onmouseout="this.style.background='#0077cc'">
+     🔍 Explore the Engineering and Construction
+  </a>
+</div>
