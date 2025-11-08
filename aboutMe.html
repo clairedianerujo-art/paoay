@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ABOUT-ME Badge</title>
+
+  <style>
+    /* Use Times New Roman (or fallback serif) */
+    :root{
+      --radius: 15px;
+      --border-weight: 1.5px;
+      --padding-h: 18px;
+      --padding-v: 12px;
+      --bg: #ffffff;
+      --frame: #111111;
+      --shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: "Times New Roman", Times, serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      background: linear-gradient(180deg, #f6f7fb 0%, #ffffff 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    /* Container that mimics a framed badge with rounded corners */
+    .about-wrapper{
+      display:inline-block;
+      padding: calc(var(--padding-v)) calc(var(--padding-h));
+      background: var(--bg);
+      border-radius: var(--radius);
+      border: var(--border-weight) solid var(--frame);
+      box-shadow: var(--shadow);
+      -webkit-backface-visibility:hidden;
+      backface-visibility:hidden;
+      transform: translateZ(0); /* improve rendering on some browsers */
+    }
+
+    /* Text styling */
+    .about-text{
+      font-weight: 700;
+      font-size: 1.4rem; /* adjust to taste */
+      letter-spacing: 0.02em;
+      line-height: 1;
+      margin: 0;
+      color: var(--frame);
+      display:inline-block;
+    }
+
+    /* Small helper class if you prefer a slimmer look */
+    .about-text.small{
+      font-size: 1rem;
+      font-weight:600;
+    }
+
+    /* Make sure it looks good when embedded in narrow containers */
+    @media (max-width:420px){
+      .about-text{ font-size:1.1rem; }
+      :root{ --padding-h: 12px; --padding-v:10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="about-wrapper" role="group" aria-label="About me label">
+    <p class="about-text">ABOUT–ME</p>
+  </div>
+</body>
+</html>
